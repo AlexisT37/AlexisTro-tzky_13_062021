@@ -1,32 +1,185 @@
+@font-face {
+	font-family: "Raleway";
+	/* src: url('fonts/Raleway/static/Raleway-Regular.ttf') format('truetype'); */
+	src: url('fonts/Raleway/variable/Raleway-VariableFont_wght.ttf') format('woff2-variations');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Rancho";
+	/* src: url('fonts/Raleway/static/Raleway-Regular.ttf') format('truetype'); */
+	src: url('fonts/Rancho/static/Rancho-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+
 #bloc_page {
 	width: auto;
+	max-width: 768px;
+	font-family: Raleway;
+	display: flex;
+	flex-flow: column wrap;
+
 }
 
 /* Header */
-header {
-	width: auto;
-	display: flex;
-	flex-direction: column;
 
+.header{
+	display: flex;
+	flex-flow: column wrap;
 }
+
+
+
+
+/* Header FIN */
+
+/* .titres DEBUT*/
 
 .titres {
+	font-family: Raleway;
+	/* width: auto; */
+	/* position: static; */
 	display: flex;
-	flex-direction: row;/*  */
+	flex-direction: row;
+	margin: 1em;
+	justify-content: space-between;
+	align-items: baseline;
+	position: relative;
+
 }
+
+.titres h1 {
+	font-family: Rancho;
+	font-size: 2em;
+	font-weight: bold;
+	font-style: normal;
+	text-decoration: wavy;
+	color: #0065FC;
+	position: relative;
+}
+
+.titres a {
+	
+	font-family: Raleway;
+	font-size: 1em;
+	position: static;
+	font-weight: bold;
+	font-style: normal;
+	text-decoration: none;
+	color: #0065FC;
+}
+
+.titres a:link {
+	text-decoration: none;
+}
+
+.titres a:hover {
+	text-decoration: none;
+	/* border: 5px solid pink; */
+	
+}
+
+.titres a:visited {
+	text-decoration: none;
+}
+
+.titres a:active {
+	text-decoration: none;
+}
+
+
+/* .titres FIN*/
+
+
+
+/* .liens DEBUT*/
 
 .liens {
 	display: flex;
 	flex-direction: row;
+	justify-content: space-around;
+	/* border: 5px solid pink; */
+
 }
 
-/* Header FIN */
+.liens a {
+	text-decoration: none;
+	color: black;
+	/* border: 5px solid green; */
+	display: flex;
+	justify-content: center;
+	flex: 1;
+	padding-bottom: 1em;
+	border-bottom: 2px solid #F2F2F2;
 
-/* Hébergements */
+
+}
+
+
+.liens a:link {
+	text-decoration: none;
+	color: black;
+	/* border: 5px solid green; */
+
+
+}
+
+.liens a:visited {
+	text-decoration: none;
+	color: black;
+}
+
+.liens a:hover {
+	text-decoration: none;
+	color: #0065FC;
+	border-bottom: 2px solid #0065FC;
+	/* border: 5px solid green; */
+}
+
+.liens a:active {
+	text-decoration: none;
+}
+
+/* .liens FIN*/
+
+
+/* Hébergements recherche DEBUT */
+.info img {
+	width: 15px;
+	height: 15px;
+}
+
+/* Hébergements FIN*/
+
+
+/* Hébergements Marseille */
+#hebergements_a_marseille {
+	font-family: Raleway;
+}
+
 /* Hébergements FIN*/
 
 /* Activités */
+#activites {
+	font-family: Raleway;
+}
+
 /* Activités Fin */
 
 /* Footer */
 /* Footer FIN*/
+
+
+@media only screen and (min-width: 768px) {
+	.titres h1 {
+		color: red;
+	}
+
+	h1 {
+		color: red;
+	}
+}
