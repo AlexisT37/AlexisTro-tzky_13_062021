@@ -27,7 +27,7 @@
 
 /* Header */
 
-.header{
+.header {
 	display: flex;
 	flex-flow: column wrap;
 }
@@ -63,7 +63,7 @@
 }
 
 .titres a {
-	
+
 	font-family: Raleway;
 	font-size: 1em;
 	position: static;
@@ -80,7 +80,7 @@
 .titres a:hover {
 	text-decoration: none;
 	/* border: 5px solid pink; */
-	
+
 }
 
 .titres a:visited {
@@ -148,12 +148,94 @@
 
 
 /* Hébergements recherche DEBUT */
-.info img {
-	width: 15px;
-	height: 15px;
+#hebergements_recherche {
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: baseline;
+
 }
 
-/* Hébergements FIN*/
+.info img {
+	width: 13px;
+	height: 13px;
+	background-color: white;
+	border: 2px solid #F2F2F2;
+	margin: 1em 1em 1em 1em;
+	padding: 6px 6px 6px 6px;
+	border-radius: 50%;
+	/* color: #0065FC; */
+}
+
+.info {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: baseline;
+	align-items: center;
+}
+
+
+#recherche {
+	margin-left: 10px;
+}
+
+#recherche h1 {
+	font-weight: bold;
+}
+
+#recherche h2 {
+	font-weight: normal;
+	font-size: 1em;
+
+}
+
+#barre_recherche {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+
+}
+
+#marqueur {
+	width: 15px;
+	height: 15px;
+	padding: 20px 20px 20px 20px;
+	background-color: #F2F2F2;
+	border: 1px solid #F2F2F2;
+	border-radius: 40% 10% 10% 40%;
+
+}
+
+#barre_search {
+	font-family: Raleway;
+	width: auto;
+	margin: auto;
+	font-size: 16px;
+	font-weight: bold;
+	padding: 20px 20px 20px 20px;
+	border-color: #F2F2F2;
+	flex: 1;
+}
+
+
+#loupe {
+	width: 20px;
+	height: 20px;
+	padding: 17px 17px 17px 17px;
+	background-color: #0065FC;
+	border: 1px solid #0065FC;
+	border-radius: 30%;
+}
+
+#filtres {
+	margin-left: 10px;
+}
+
+#filtres h1 {
+	font-size: 1em;
+}
+
+/* Hébergements recherche FIN*/
 
 
 /* Hébergements Marseille */
