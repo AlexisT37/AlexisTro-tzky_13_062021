@@ -18,7 +18,7 @@
 
 #bloc_page {
 	width: auto;
-	max-width: 768px;
+	max-width: 90%;
 	font-family: Raleway;
 	display: flex;
 	flex-flow: column wrap;
@@ -45,7 +45,8 @@
 	/* position: static; */
 	display: flex;
 	flex-direction: row;
-	margin: 1em;
+	margin-left: 1em;
+	margin-right: 1em;
 	justify-content: space-between;
 	align-items: baseline;
 	position: relative;
@@ -71,6 +72,7 @@
 	font-style: normal;
 	text-decoration: none;
 	color: #0065FC;
+	margin-right: 1em;
 }
 
 .titres a:link {
@@ -155,31 +157,17 @@
 
 }
 
-.info img {
-	width: 13px;
-	height: 13px;
-	background-color: white;
-	border: 2px solid #F2F2F2;
-	margin: 1em 1em 1em 1em;
-	padding: 6px 6px 6px 6px;
-	border-radius: 50%;
-	/* color: #0065FC; */
-}
 
-.info {
-	display: flex;
-	flex-flow: row nowrap;
-	justify-content: baseline;
-	align-items: center;
-}
 
 
 #recherche {
 	margin-left: 10px;
+	max-width: 90%;
 }
 
 #recherche h1 {
 	font-weight: bold;
+	font-size: 24px;
 }
 
 #recherche h2 {
@@ -199,7 +187,7 @@
 #marqueur {
 	width: 15px;
 	height: 15px;
-	padding: 20px 20px 20px 20px;
+	padding: 19px 19px 19px 19px;
 	background-color: #F2F2F2;
 	border: 1px solid #F2F2F2;
 	border-radius: 40% 10% 10% 40%;
@@ -208,13 +196,10 @@
 
 #barre_search {
 	font-family: Raleway;
-	width: auto;
-	margin: auto;
 	font-size: 16px;
 	font-weight: bold;
-	padding: 20px 20px 20px 20px;
+	padding: 15px 15px 15px 15px;
 	border-color: #F2F2F2;
-	flex: 1;
 }
 
 
@@ -229,10 +214,72 @@
 
 #filtres {
 	margin-left: 10px;
+	max-width: 90%;
 }
 
 #filtres h1 {
 	font-size: 1em;
+}
+
+.liste_filtres {
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.elem_filtre {
+	display: flex;
+	flex-flow: row;
+	justify-content: center;
+	align-items: center;
+	border: 2px solid #F2F2F2;
+	/* padding: 3px 3px 3px 3px; */
+	border-radius: 40px 40px 40px 40px;
+}
+
+.elem_filtre a {
+	padding: 10px 15px 10px 15px;
+	text-decoration: none;
+	font-weight: bold;
+}
+.elem_filtre a:visited {
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+
+}
+
+
+.liste_filtres img {
+	width: 25px;
+	height: 25px;
+	border: 1px solid #DEEBFF;
+	padding: 15px 15px 15px 15px;
+	background-color: #DEEBFF;
+	border-radius: 50%;
+}
+
+.info img {
+	width: 13px;
+	height: 13px;
+	background-color: white;
+	border: 2px solid #F2F2F2;
+	margin: 1em 1em 1em 1em;
+	padding: 6px 6px 6px 6px;
+	border-radius: 50%;
+	/* color: #0065FC; */
+}
+
+.info {
+	display: flex;
+	flex-flow: row nowrap;
+	max-width: 90%;
+	justify-content: baseline;
+	align-items: center;
+	/* overflow: unset; */
+}
+
+.info p{
+	overflow-wrap: break-word;
 }
 
 /* Hébergements recherche FIN*/
@@ -253,6 +300,26 @@
 /* Activités Fin */
 
 /* Footer */
+footer{
+	background-color: #F2F2F2;
+	padding: 25px 5px 5px 25px;
+}
+
+.pied{
+	margin-bottom: 25px;
+}
+
+.pied h1{
+	font-size: 1.1em;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.pied h2{
+	font-size: 0.9em;
+	font-weight: normal;
+
+}
 /* Footer FIN*/
 
 
