@@ -73,7 +73,7 @@ header {
 	/* margin-right: 2rem; */
 	/* margin-left: 2rem; */
 	margin-right: 3rem;
-	margin-left: 4rem;
+	margin-left: 12rem;
 	align-self: center;
 }
 
@@ -318,7 +318,7 @@ header {
 
 /* Les plus populaires DEBUT */
 
-#selection_populaires {
+#populaire_1 {
 	background-color: #F2F2F2;
 	/* margin: 0 0 0 0; */
 	/* border: 2px solid orange; */
@@ -328,7 +328,7 @@ header {
 
 #populaires_titre {
 	margin-bottom: 1rem;
-	margin-top: 2rem;
+	/* margin-top: 2rem; */
 	margin-right: 5rem;
 	/* width: auto; */
 	display: flex;
@@ -344,6 +344,7 @@ header {
 	font-size: 2rem;
 	font-weight: bold;
 	/* margin-right: 3rem; */
+	margin-left: 1rem;
 }
 
 
@@ -502,6 +503,7 @@ header {
 	font-size: 2rem;
 	font-weight: bold;
 	/* border: 2px solid red; */
+	margin-left: 2rem;
 
 }
 
@@ -531,7 +533,7 @@ header {
 
 
 .activites_3 {
-	
+
 	width: auto;
 	height: auto;
 	margin: auto;
@@ -544,7 +546,7 @@ header {
 }
 
 .activites_4 {
-	
+
 	display: flex;
 	flex-flow: column nowrap;
 	justify-content: space-evenly;
@@ -553,6 +555,7 @@ header {
 	/* border: 2px solid blue; */
 	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 	border-radius: 20px 20px 20px 20px;
+	margin-bottom: 1rem;
 
 
 
@@ -670,6 +673,16 @@ footer {
 		color: black;
 	}
 
+	#activites_marseille_titre {
+		margin-top: 5rem;
+		font-size: 2rem;
+		font-weight: bold;
+		/* border: 2px solid red; */
+		margin-left: 0;
+
+	}
+
+
 	.lien_border:hover {
 		font-weight: bold;
 		text-decoration: none;
@@ -742,7 +755,7 @@ footer {
 		border-radius: 1rem 1rem 1rem 1rem;
 	}
 
-	#selection_populaires {
+	#populaire_1 {
 		background-color: #F2F2F2;
 		border-radius: 1rem 1rem 1rem 1rem;
 	}
@@ -903,3 +916,313 @@ footer {
 
 
 }
+
+
+
+/* tablettes */
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+	header {
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: space-between;
+		align-items: baseline;
+		/* margin-left: 2rem;
+		margin-right: 2rem; */
+		padding: 0 2rem 0 2rem;
+	}
+
+	header #inscription {
+		order: 4;
+		font-size: 3rem;
+	}
+
+	/* header:nth-child(2) {
+		order: 4;
+	}
+
+	header:nth-child(3) {
+		order: 2;
+	}
+
+	header:nth-child(4) {
+		order: 3;
+	} */
+
+	.lien_border {
+		font-size: 2.6rem;
+		text-decoration: none;
+		color: black;
+		/* border: 5px solid green; */
+		display: flex;
+		justify-content: center;
+		flex: 1;
+		padding-bottom: 1em;
+		border-top: 2px solid #F2F2F2;
+		border-bottom: none;
+
+
+	}
+
+	.lien_border:link {
+		text-decoration: none;
+		color: black;
+		/* border: 5px solid green; */
+
+
+	}
+
+	.lien_border:visited {
+		text-decoration: none;
+		color: black;
+	}
+
+	#activites_marseille_titre {
+		color: #0065FC;
+		margin-top: 5rem;
+		font-size: 4rem;
+		font-weight: bold;
+		/* border: 2px solid red; */
+		margin-left: 0;
+
+	}
+
+
+	.lien_border:hover {
+		font-weight: bold;
+		text-decoration: none;
+		color: #0065FC;
+		border-top: 2px solid #0065FC;
+		border-bottom: none;
+	}
+
+	.lien_border:active {
+		text-decoration: none;
+	}
+
+	#recherche {
+		display: flex;
+		flex-flow: column wrap;
+		justify-content: space-around;
+		/* margin-left: 1rem; */
+		/* max-width: 90%; */
+		width: 100%;
+		padding: 2rem 2rem 2rem 2rem;
+	}
+
+	.boite_pop_heb {
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: flex-end;
+		/* align-items: baseline; */
+		/* border: 2px solid red; */
+		padding: 2rem 2rem 2rem 2rem;
+
+
+	}
+
+	#barre_recherche_et_logos {
+		margin-bottom: 2rem;
+		/* display: none; */
+		/* color: red; */
+		/* min-height: 4.4rem; */
+		/* font-size: 3rem; */
+	}
+
+
+	#hebergements {
+		/* border: 2px solid green; */
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: start;
+		align-items: flex-start;
+		background-color: #F2F2F2;
+		margin-right: 3rem;
+		border-radius: 1rem 1rem 1rem 1rem;
+		padding: 2rem 2rem 2rem 2rem;
+	}
+
+
+
+	#photos_hebergements_marseille {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: start;
+		align-items: flex-start;
+		/* border: 2px solid black; */
+		/* padding: 2rem 2rem 2rem 2rem; */
+
+	}
+
+	#afficher_plus {
+		margin-bottom: 2rem;
+	}
+
+	#photos_populaires {
+		/* border: 2px solid purple; */
+		background-color: #F2F2F2;
+		border-radius: 1rem 1rem 1rem 1rem;
+	}
+
+	#populaire_1 {
+		background-color: #F2F2F2;
+		border-radius: 1rem 1rem 1rem 1rem;
+	}
+
+
+	#photos_hebergements_marseille {
+		max-width: 106rem;
+	}
+
+	.fake_lien {
+		width: auto;
+	}
+
+	.texte h2 {
+		min-width: 25rem;
+	}
+
+	.photo_mini_hebergements {
+		width: 100%;
+	}
+
+	.conteneur_photos_hebergement {
+		width: auto;
+	}
+
+	.info {
+		display: none;
+		/* flex-direction: row;
+		justify-content: flex-start; */
+	}
+
+	footer {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+
+	}
+
+	#barre_recherche {
+		display: flex;
+		flex-direction: row;
+		justify-content: left;
+		align-items: center;
+
+	}
+
+	#filtres {
+		display: flex;
+		flex-direction: row;
+		justify-content: start;
+		align-items: center;
+	}
+
+	.photo_mini_activites {
+		max-height: 40rem;
+		min-width: 30rem;
+	}
+
+	.large {
+		min-height: 39rem;
+		max-width: 30rem;
+
+	}
+
+	.activites {
+		width: 100%;
+		/* height: auto; */
+		/* margin: auto; */
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: center;
+		align-items: center;
+		padding: 2rem 2rem 2rem 2rem;
+
+	}
+
+	.activites_1 {
+		width: auto;
+		height: auto;
+		/* margin: auto; */
+		position: relative;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: center;
+		align-items: center;
+		/* padding: 2rem 2rem 2rem 2rem; */
+	}
+
+	.activites_2 {
+		width: auto;
+		height: auto;
+		margin: auto;
+		position: relative;
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: space-around;
+		align-items: flex-end;
+		box-shadow: none;
+		/* padding: 2rem 2rem 2rem 2rem; */
+	}
+
+	.activites_3 {
+		width: auto;
+		height: auto;
+		margin: auto;
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: flex-end;
+		align-items: center;
+		flex: 1;
+		/* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+		border-radius: 20px 20px 20px 20px;
+		padding: 2rem 2rem 2rem 0;
+		margin-right: 2rem;
+		margin-bottom: 2rem;
+
+	}
+
+
+	.activites_4 {
+		border-radius: 20px 20px 20px 20px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+		margin-top: 2rem;
+	}
+
+	.loupe {
+		left: 25rem;
+		position: absolute;
+		width: 2rem;
+		height: 2rem;
+		padding: 17px 17px 17px 17px;
+		background-color: #0065FC;
+		border: 1px solid #0065FC;
+		border-radius: 0 15px 15px 0;
+	}
+
+
+	#loupe_icone {
+		display: none;
+	}
+
+	#loupe_texte {
+		font-weight: 900;
+		font-size: 2.0rem;
+		display: flex;
+		margin: auto;
+		width: auto;
+		color: #FFFFFF;
+
+	}
+
+	#filtres h2 {
+		margin-right: 2rem;
+	}
+
+
+}
+
+/* Tablette FIN */
