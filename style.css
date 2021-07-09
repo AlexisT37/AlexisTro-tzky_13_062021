@@ -617,8 +617,8 @@ footer {
 
 /* Footer FIN*/
 
-
-@media only screen and (min-width: 768px) {
+/* desktop DEBUT */
+@media only screen and (min-width: 1200px) {
 	header {
 		display: flex;
 		flex-flow: row nowrap;
@@ -627,6 +627,10 @@ footer {
 		/* margin-left: 2rem;
 		margin-right: 2rem; */
 		padding: 0 2rem 0 2rem;
+	}
+
+	body {
+		overflow-x: hidden;
 	}
 
 	header #inscription {
@@ -765,8 +769,8 @@ footer {
 		max-width: 106rem;
 	}
 
-	.fake_lien {
-		width: auto;
+	.fake_lien_hebergement {
+		width: 30%;
 	}
 
 	.texte h2 {
@@ -825,10 +829,11 @@ footer {
 		/* height: auto; */
 		/* margin: auto; */
 		display: flex;
-		flex-flow: column nowrap;
+		flex-flow: column wrap;
 		justify-content: center;
-		align-items: flex-start;
+		align-items: stretch;
 		padding: 2rem 2rem 2rem 2rem;
+		flex: 1 1 auto;
 
 	}
 
@@ -842,6 +847,7 @@ footer {
 		justify-content: center;
 		align-items: center;
 		/* padding: 2rem 2rem 2rem 2rem; */
+		flex: 1 1 auto;
 	}
 
 	.activites_2 {
@@ -917,6 +923,8 @@ footer {
 
 }
 
+/* desktop FIN */
+
 
 
 /* tablettes */
@@ -933,7 +941,7 @@ footer {
 
 	header #inscription {
 		order: 4;
-		font-size: 3rem;
+		font-size: 1.7rem;
 	}
 
 	/* header:nth-child(2) {
@@ -949,7 +957,7 @@ footer {
 	} */
 
 	.lien_border {
-		font-size: 2.6rem;
+		font-size: 1.7rem;
 		text-decoration: none;
 		color: black;
 		/* border: 5px solid green; */
@@ -1226,3 +1234,15 @@ footer {
 }
 
 /* Tablette FIN */
+
+@media only screen and (min-width: 1100px) and (max-width: 1360px) {
+	.fake_lien_hebergement {
+		width: 48%;
+		
+	}
+
+
+	#photos_hebergements_marseille .fake_lien_hebergement:nth-child(odd) {
+		margin-right: 2%;
+	}
+}
