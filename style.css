@@ -486,6 +486,13 @@ header {
 /* Hébergements FIN*/
 
 /* Activités */
+
+.activites_compatibility {
+	display: none;
+}
+
+
+
 .activites {
 	font-family: Raleway;
 	/* border: 2px solid black; */
@@ -619,6 +626,11 @@ footer {
 
 /* desktop DEBUT */
 @media only screen and (min-width: 1200px) {
+
+	.activites_compatibility {
+		display: none;
+	}
+
 	header {
 		display: flex;
 		flex-flow: row nowrap;
@@ -929,6 +941,13 @@ footer {
 
 /* tablettes */
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
+
+
+	.activites_compatibility {
+		display: none;
+	}
+
+
 	header {
 		display: flex;
 		flex-flow: row nowrap;
@@ -1235,14 +1254,134 @@ footer {
 
 /* Tablette FIN */
 
+
+/* hebergement handling fake lien DEBUT */
 @media only screen and (min-width: 1100px) and (max-width: 1360px) {
+
+	.activites_compatibility {
+		display: none;
+	}
+
 	.fake_lien_hebergement {
 		width: 48%;
-		
+
 	}
 
 
 	#photos_hebergements_marseille .fake_lien_hebergement:nth-child(odd) {
 		margin-right: 2%;
 	}
+
+	.activites_compatibility {
+		display: none;
+	}
 }
+
+/* hebergement handling fake lien FIN */
+
+
+
+/* Activites compatibilite grid DEBUT */
+@media only screen and (min-width: 1200px) and (max-width: 1424px) {
+	.activites {
+		display: none;
+	}
+
+	.activites_compatibility {
+		display: grid;
+		grid-auto-flow: initial;
+		gap: 4rem;
+		grid-template-rows: repeat(2, 23rem);
+		grid-template-columns: repeat(4, 1fr);
+		padding: 2rem 2rem 2rem 2rem;
+		/* grid-template-areas: "header header"; */
+
+	}
+
+	.activites_4_compatibility {
+		box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+		border-radius: 20px 20px 20px 20px;
+		/* max-width: 300px; */
+		/* max-height: 300px; */
+		grid-row: span 1;
+
+	}
+
+	.small img {
+		object-fit: cover;
+		object-position: 50% 50%;
+		max-width: 31rem;
+		max-height: 17rem;
+	}
+
+	.large img{
+		height: 45rem;
+		object-fit: cover;
+		object-position: 50% 50%;
+		max-width: 30rem;
+		/* max-height: auto; */
+	}
+
+
+	.fake_lien_compatibility {
+		text-decoration: none;
+		display: flex;
+		flex-direction: column;
+
+		/* border-radius: 20px 20px 20px 20px; */
+	}
+
+	.fake_lien_compatibility:visited {
+		text-decoration: none;
+		color: black;
+	}
+
+	.fake_lien_compatibility:active {
+		text-decoration: none;
+		color: black;
+	}
+
+
+	.fake_lien_compatibility h2 {
+		margin: 1rem 1rem 1rem 1rem;
+	}
+	
+
+	.photo_grid {
+		border-radius: 20px 20px 0 0;
+	}
+
+	.large {
+		/* grid-area: header header; */
+		grid-row: span 2;
+	}
+
+	#act-1 {
+		order: 0;
+	}
+
+	#act-2 {
+		order: 1;
+	}
+
+	#act-3 {
+		order: 2;
+	}
+
+	#act-4 {
+		order: 1;
+	}
+
+	#act-5 {
+		order: 1;
+	}
+
+	#act-6 {
+		order: 5;
+	}
+
+
+}	
+
+
+	/* Activites compatibilite grid FIN */
