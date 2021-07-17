@@ -468,13 +468,15 @@ header {
 
 }
 
-#activites_marseille_titre {
+#activites_marseille_titre_normal {
 	margin-top: 5rem;
 	font-size: 2rem;
 	font-weight: bold;
 	margin-left: 2rem;
 
 }
+
+
 
 .activites_1 {
 	display: flex;
@@ -561,6 +563,15 @@ footer {
 
 /* Footer FIN*/
 
+
+@media screen and (max-width: 768px) {
+
+	#activites_marseille_titre_compatibility {
+		display: none;
+	}
+
+}
+
 /* desktop DEBUT */
 @media only screen and (min-width: 1200px) {
 
@@ -617,6 +628,13 @@ footer {
 
 	}
 
+
+	#activites_marseille_titre_compatibility {
+		margin-top: 5rem;
+		font-size: 2rem;
+		font-weight: bold;
+		margin-left: 2rem;
+	}
 
 	.lien_border:hover {
 		font-weight: bold;
@@ -846,6 +864,10 @@ footer {
 /* tablettes */
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
 
+	#activites_marseille_titre_compatibility {
+		display: none;
+	
+	}
 
 	.activites_compatibility {
 		display: none;
@@ -884,18 +906,20 @@ footer {
 		text-decoration: none;
 		color: black;
 	}
+
 	.lien_border:visited {
 		text-decoration: none;
 		color: black;
 	}
 
-	#activites_marseille_titre {
+	#activites_marseille_titre_normal {
 		color: #0065FC;
 		margin-top: 5rem;
 		font-size: 4rem;
 		font-weight: bold;
 		margin-left: 0;
 	}
+
 
 
 	.lien_border:hover {
@@ -957,7 +981,7 @@ footer {
 	#photos_populaires {
 		background-color: #F2F2F2;
 		border-radius: 1rem 1rem 1rem 1rem;
-		
+
 	}
 
 	#populaire_1 {
